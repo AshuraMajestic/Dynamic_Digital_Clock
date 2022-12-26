@@ -39,11 +39,10 @@ setInterval(
         } else {
             document.getElementById("area3").style.backgroundImage = "url(night_3.png)";
         }
-        if ((hour >= 0) && (hour < 12)) {
-            document.getElementById("area6").style.backgroundImage = "url(AM.png)"
-        } else {
+        if ((hour >= 6) && (hour < 18)) {
             document.getElementById("area6").style.backgroundImage = "url(PM.png)"
-
+        } else {
+            document.getElementById("area6").style.backgroundImage = "url(AM.png)"
         }
     }, 1000
 );
